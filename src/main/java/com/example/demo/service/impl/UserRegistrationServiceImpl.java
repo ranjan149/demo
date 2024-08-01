@@ -19,7 +19,6 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
 
     @Override
     public void register(UserDto user) {
-        System.out.println("This is a test");
         User newUser = new User();
         newUser.setUsername(user.getUsername());
         newUser.setPassword(user.getPassword());

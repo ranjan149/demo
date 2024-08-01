@@ -22,7 +22,6 @@ public class UserRegistrationController {
     @ResponseBody
     public UserRegistrationResponse registerUser(@RequestBody UserDto user) {
         userRegistrationService.register(user);
-        System.out.println(" this is new change from shreesha");
         UserRegistrationResponse response = new UserRegistrationResponse();
         response.setUserEmail(user.getEmail());
         response.setUserName(user.getUsername());
